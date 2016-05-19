@@ -17,6 +17,7 @@ defmodule GithubApi.Router do
     pipe_through :api # Use the default browser stack
 
     get "/users/:user", GithubController, :user
+    get "/users/:user/repos", GithubController, :repos
   end
 
   # scope "/", GithubApi do

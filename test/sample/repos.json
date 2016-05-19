@@ -1,0 +1,10 @@
+[
+  {
+    "html_url": "https://github.com/elixir-lang/docs",
+    "description": "Docs for the Elixir project hosted on elixir-lang.org. Generated automatically."
+  },
+  {
+    "html_url": "https://github.com/elixir-lang/ecto",
+    "description": "A database wrapper and language integrated query for Elixir"
+  }
+]

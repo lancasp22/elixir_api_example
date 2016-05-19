@@ -4,5 +4,9 @@ defmodule GithubApi.Github.Client do
   def get_user(user) do
     @client.get_user(user)
   end
+
+  def get_user_repos(user) do
+    @client.get_user_repos(user)
+  end
   
 end

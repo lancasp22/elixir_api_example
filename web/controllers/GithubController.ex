@@ -12,4 +12,12 @@ defmodule GithubApi.GithubController do
 
     json conn, response
   end
+
+  def repos(conn, %{"user" => user}) do
+    # IEx.pry
+    response = Client.get_user_repos(user)
+    |> Transform.extract_user_repos
+
+    json conn, response
+  end
 end
