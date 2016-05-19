@@ -9,6 +9,8 @@ config :github_api, GithubApi.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
+config :github_api, :github_client, GithubApi.Github.FakeClient
+
 # Set a higher stacktrace during test
 config :phoenix, :stacktrace_depth, 20
 
